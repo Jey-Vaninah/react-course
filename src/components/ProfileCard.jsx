@@ -1,6 +1,6 @@
 export const ProfileCard = ({ name, age, job ,avatar,}) => {
     return (
-        <div className="utilisateur">
+        <div className="userr">
             <p>Name: {name}</p>
             <p>age: {age}</p>
             <p>jobs: {job}</p>

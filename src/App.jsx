@@ -1,4 +1,5 @@
 import { ProfileCard } from "./components/ProfileCard"
+
 const users = [
   {
     avatar: "idk",
@@ -19,12 +20,11 @@ const users = [
     job: "Backend",
   },
 ];
+
 export const App = () => {
-
-
   return (
     <div>
-      <ProfileCard {users} />
+      {users.map(user => <ProfileCard name={user.name} job={user.job} avatar={user.avatar} age={user.age} />)}
     </div>
   );
 };
